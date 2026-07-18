@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{%block title%}
+Articles
+{%endblock%}
+{% block content %}
+
+    <h1> here is the documents of articles!</h1>
+
+    <!-- baraye kode dastory -->
+    {% for x in articles %}   
+    <h2>
+        <a href="{%url 'articles:detaile' slug=x.slug %}">{{ x.title}}</a>
+    </h2>
+    <p>
+        {{x.snippet}}
+    </p>
+    <p>
+        {{x.date}}
+    </p>
+    {% endfor %}
+
+{% endblock%}

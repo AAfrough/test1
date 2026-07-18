@@ -1,0 +1,19 @@
+h1{
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+p{
+    color: #560000;
+    font-size: 30px;
+    font-weight: normal
+    
+}
+
+body{
+    background-image: url(ax.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
